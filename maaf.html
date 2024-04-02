@@ -1,0 +1,90 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="styles.css" rel="stylesheet" type="text/css" /><script src="scrippt.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<head>
+<title>orang tulus mau minta maap</title>
+
+</head>
+<style>
+:root {
+--warna-bg: rgba(0, 0, 0, .5); 
+--warna-teks: #fff;
+--warna-bingkai: #fff;
+--bingkai: 8px;
+--bingkai-kiri: 2px solid var(--warna-bingkai);
+--bingkai-kanan: 2px solid var(--warna-bingkai);
+--gaya-font: 'Josefin Sans', sans-serif;
+}
+</style>
+<body>
+
+   <!-- Ganti Audio di sini --><audio id="linkmp3">music.weba</audio>
+
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="background.jpg" id="wallpaper"/>
+   </div>
+
+   <div id='Content'>
+
+     <div id="suratin" onClick="memulai();audio.play();">
+       <!-- Tombol Surat --><img src="duit.webp"/>
+     </div>
+     <p id="ket">pencet kalo mau TEH HA ER</p>
+     <div><blockquote id='bq'>
+       <div>
+         <!-- Stiker untuk Konten -->
+         <img src="gip.webp" id="fotoakhir"/>
+         <img src="gip1.webp" id="fotoakhir2"/>
+         <img src="gip2.webp" id="fotoakhir3"/>
+       </div>
+
+       <!-- Konten Pertanyaan -->
+       <p id="kalimat">minal aidzin walfaidzin</p>
+       <p id="kalimatb">walau nyisain tekanan batin</p>
+       <p id="kalimatc">dari aku banyak salah tolong dimaapin</p>
+
+       <!-- Konten Jawaban -->
+       <p id="kalimat2">surah an-nur ayat 22 </p>
+       <p id="kalimatb2"> وَالْمُهٰجِرِيْنَ فِيْ سَبِيْلِ اللّٰهِۖ وَلْيَعْفُوْا وَلْيَصْفَحُوْاۗ اَلَا تُحِبُّوْنَ اَنْ يَّغْفِرَ اللّٰهُ لَكُمْۗ وَاللّٰهُ غَفُوْرٌ رَّحِيْمٌ </p>
+       <p id="kalimatc2"> jangan lupa tf ke rekening😁😁😁 <b id="ctimer" style="font-size:24px">3</b></p>
+
+       <!-- Konten Jawaban 2 -->
+       <p id="kalimat3">Pipi bengkak jangan diraba</p>
+       <p id="kalimatb3">Dikasih obat biar tak terasa</p>
+       <p id="kalimatc3">Bulan syawal sudah hampir tiba</p>
+       <p id="kalimatd3">Mohon ampun segala dosa</p>
+     </blockquote></div>
+
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">ambil teh ha er</b>
+       </a>
+
+       <a id="Bn" onClick="ditolak()">bukan dhuafa maaf</a><a id="Bn2" onClick="ditolak2()"></a>
+     </div>
+
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  ftom=0;jikapr=1;ftganti=0;flag=1;flagg=1;fungsi=0;Bn2.innerHTML=Bn.innerHTML;function showDiv() {pesanwhatsapp = "";Bn2.style.display="none";Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";}
+  function memulai(){suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(mulaikonten,300)}
+  function mulaikonten() {otomatis();suratin.style="display:none";ket.style="display:none";Content.style = "opacity:1;margin-top:4vh";bodyblur.style="opacity:.6;animation:none";wallpaper.style="transform: scale(2);opacity:1;";fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,200);bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);border-radius:var(--bingkai);margin-top:0";fungsi=1;setTimeout(tombol,500);}
+
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .3s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir3.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .3s ease;transform:scale(1);";}
+  }
+  function fthilang(){fotoakhir.style="display:inline-flex;opacity:1;transition:all .3s ease;transform:scale(.1)";}
+  function jjfoto(){fotoakhir.style.animation="rto .3s infinite alternate";}
+
+  function tombol(){Tombol.style="opacity:1;transform: scale(1);";Bn.style="margin:12px 0 12px 12px";ftom=1;}
+  function multifungsi(){if(ftom==1){diterima();} if(ftom==5){menuju();}}
+  async function menuju(){await swals.fire('Kamsahamnida😊', 'kalau rejeki ntar ada notif dari BRI🤡', 'success');window.location = "https://api.whatsapp.com/send?phone=6288806104499&text=hai%20kan%20dibilang%20nanti%2C%20bukan%20sekarang" ;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
+
+  const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+   const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<!-- Sampai Sini -->
+</body>
+</html>
